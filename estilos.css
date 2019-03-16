@@ -149,14 +149,14 @@ width: 15%
 } */
 
 .servicios{
-margin-top: 40px;
+/* margin-top: 40px; */
 }
 
 .servicios-container{
     width: 95%;
     margin: 0px auto;
-    border: 2px solid rgb(34, 51, 78);
-    margin-bottom: 70px;
+    /* border: 2px solid rgb(34, 51, 78); */
+    /* margin-bottom: 70px; */
 }
 
 .servicios-categorias {
@@ -175,14 +175,11 @@ margin-top: 40px;
     width: 46%;
     height: 500px;
     background:rgb(34, 51, 78);
-    border: 1% solid black;
-    border-radius: 0px;
-    margin: 10px 1%;
+    margin: 10px 2%;
     overflow: hidden;
     box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.56);
-    /* flex-wrap: wrap; */
     /* flex-shrink: 0; */
-    /* hidden hace que se escondan las esquinas feas que sobresalen de un marco radius. */
+    /* overflow hidden hace que se escondan las esquinas feas que sobresalen de un marco radius. */
     /* flex shrink hace que al ajustar objetos, imagenes etc, en una fila, estos queden con la misma resolucion. */
     
 }
@@ -192,8 +189,6 @@ margin-top: 40px;
     width: 100%;
     height: 200px;
     object-fit: cover;
-    /* display: flex;
-    align-items: flex-start; */
 }
 
 
@@ -212,34 +207,33 @@ margin-top: 40px;
 }
 
 .categoria-titulo{
-    font-size: 20px;
     color: rgb(213, 143, 9);
     padding-top: 10px;
+    font-size: 1em;
 }
+
 .categoria-lista{
-    width: 100%;
+    width: 95%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    align-self: flex-start;
-    justify-self: flex-start;
-    padding: 10px 10px 25px 25px;
+    align-self: center;
+    font-size: 0.8em;
+    margin-bottom: 5%;
 }
-.categoria ol li a{
+.categoria-lista a{
+    display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     color:rgb(34, 51, 78);
     letter-spacing: -0.5px;
-    line-height: 1.5px;
-    align-self: flex-start;
-    
-    
 }
 .categoria-boton{
-
+    
     display: flex;
     justify-content: center;
     width: 30%;
+    font-size: 0.9em;
     
 }
 .categoria-boton.texto{
@@ -267,7 +261,7 @@ margin-top: 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 95%;
     margin: 0px auto;
 }
@@ -294,22 +288,24 @@ margin-top: 40px;
     border-top-right-radius: 15px;  */
     border-bottom-right-radius: 15px; 
     /* background: linear-gradient(to right, rgba(108, 43, 125,0), rgba(108, 43, 125,1)); */
-    
 }
+
 
 .organizacion-reseña.pregunta{
     font-size: 1.5em;
 }
+
 .organizacion-reseña.fecha{
     font-size: .8em;
 }
+
 .organizacion-reseña.url{
     font-size: .8em;
 }
+
 .organizacion-reseña.subdescripcion{
     font-size: 1em;
 }
-
 
 .organizacion-reseña.imageContainer{
     /* display: flex; */
@@ -318,16 +314,14 @@ margin-top: 40px;
     /* height: auto; */
     margin-top: -90px;
 }
+
 .organizacion-image{
     /* display: flex; */
     /* flex-shrink: 0; */
     width: 100%;
     height: auto;
-    /* height: 100%; */
-    
+    /* height: 100%; */ 
 }
-
-
 
 .contact{
     border-top: 2px solid rgb(34, 51, 78);
@@ -382,7 +376,7 @@ margin-top: 40px;
     
 }
 .social-link{
-    margin: 0px 10px
+    margin: 10px 10px
 }
 
 
@@ -424,8 +418,8 @@ margin-top: 40px;
 }
 
 .franja{
-    border-left: 50px solid rgb(213, 143, 9);
-    margin: 60px 20px 100px 0px;
+    border-left: 5vw solid rgb(213, 143, 9);
+    margin: 50px 0px 50px 0px;
 }
 
 
@@ -445,11 +439,16 @@ margin-top: 40px;
     border-bottom: 5px solid rgb(34, 51, 78);    
     }
 
+    .categoria{
+        font-size: 22px;
+    }
     .organizacion-reseña.descripcion{
     font-size: 20px;
     }
 
-
+    .categoria{
+        height: 500px;
+    }
 }
 
 
@@ -470,6 +469,20 @@ margin-top: 40px;
     padding: 0px 0px 5px 0px;
     margin: 0px 0px 10px 10px;
     border-bottom: 5px solid rgb(34, 51, 78);       
+    }
+    .hero  div a{
+        font-size: 25px;
+        padding: 5px 15px;
+        margin-top: -30px;
+        border: 4px solid rgb(34, 51, 78);
+    }
+
+    .categoria{
+        height: 500px;
+    }
+
+    .categoria{
+        font-size: 21px;
     }
 
     .organizacion-reseña.descripcion{
@@ -492,9 +505,11 @@ margin-top: 40px;
     text-align: center;
     }
 
-    .link{
-    padding: 10px 0px;
-    }
+  
+    .link {
+        font-size: 20px;
+        padding: 10px 0px;    
+        }
 
     h2{
     font-size: 30px;     
@@ -503,6 +518,27 @@ margin-top: 40px;
     border-bottom: 5px solid rgb(34, 51, 78);  
     }
 
+    .hero  div a{
+        font-size: 20px;
+        padding: 5px 15px;
+        margin-top: -20px;
+        border: 4px solid rgb(34, 51, 78);
+    }
+
+    .categoria{
+        font-size: 19px;
+    }
+    
+    .categoria{
+    width: 96%;
+    height: 450px;
+    background:rgb(34, 51, 78);
+    border: 1% solid black;
+    border-radius: 0px;
+    margin: 10px 1%;
+    overflow: hidden;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.56);
+    }
     .organizacion-reseña.descripcion{
     width: 100%;
     font-size: 16px;
@@ -513,22 +549,16 @@ margin-top: 40px;
     margin-top: 0px;
     }
 
-    .categoria{
-    width: 96%;
-    height: 500px;
-    background:rgb(34, 51, 78);
-    border: 1% solid black;
-    border-radius: 0px;
-    margin: 10px 1%;
-    overflow: hidden;
-    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.56);
-    }
 
 
     .contact{
         /* font-size: 30px; */
         justify-content: space-around;
         align-items: center;
+    }
+    .social-link img{
+        width: 60px;
+
     }
 
 
@@ -542,12 +572,19 @@ margin-top: 40px;
     }
     
 
+    .franja{
+    margin: 35px 0px 35px 0px;
+    }
 
 
 @media screen and (max-width: 480px){
     .logo-header.figure{
     width: 25%;
     }
+    .link {
+        font-size: 15px;
+        padding: 5px 0px;    
+        }
 
     h2{
     font-size: 25px; 
@@ -555,7 +592,20 @@ margin-top: 40px;
     margin: 0px 0px 0px 5px;
     border-bottom: 4px solid rgb(34, 51, 78);        
     }
-    
+    .hero  div a{
+        font-size: 15px;
+        padding: 5px 10px;
+        margin-top: -20px;
+        border: 3px solid rgb(34, 51, 78);
+    }
+
+
+    .categoria{
+        font-size: 18px;
+    }
+    .categoria{
+        height: 450px;
+    }
     .organizacion-reseña.descripcion{
     width: 100%;
     font-size: 10px;
@@ -568,6 +618,7 @@ margin-top: 40px;
     /* align-items: center; */
     }
     
+   
     .form-email{
     display: flex;
     flex-direction: column;
@@ -578,15 +629,22 @@ margin-top: 40px;
     .form-email input {
     background-size: 12px 12px;
     }
+
+    .social-link img{
+        width: 45px;
+
+    }
     .footer{
     justify-content: center;
     font-size: 11px; 
     }
       
     .footer img {
-    width: 60px;    
+    width: 60px;  
     }
-    
+    .franja{
+        margin: 30px 0px 30px 0px;
+    }
 }
 
 
@@ -594,12 +652,35 @@ margin-top: 40px;
     .logo-header.figure{
     width: 30%;
     }
+
+    .link {
+    font-size: 10px;
+    padding: 3px 0px;    
+    }
+
     h2{
     font-size: 20px; 
     padding: 0px 0px 2px 0px;
     margin: 0px 0px 0px 2.5px;
     border-bottom: 4px solid rgb(34, 51, 78);        
     }
+
+
+    .hero  div a{
+        font-size: 10px;
+        padding: 5px 10px;
+        margin-top: -20px;
+        border: 3px solid rgb(34, 51, 78);
+    }
+
+    .categoria{
+        font-size: 16px;
+    }
+    
+    .categoria{
+        height:400px;
+    }
+    
     .organizacion-reseña.descripcion{
     width: 100%;
     font-size: 8px;
@@ -613,7 +694,10 @@ margin-top: 40px;
         background-size: 10px 10px;
     }
 
+    .social-link img{
+        width: 30px;
 
+    }
     
     .footer{
         justify-content: center;
@@ -621,8 +705,12 @@ margin-top: 40px;
     }
       
     .footer img {
-    width: 50px;    
+    width: 50px; 
     }
+    .franja{
+        margin: 25px 0px 25px 0px;
+    }
+
 }
 
 
