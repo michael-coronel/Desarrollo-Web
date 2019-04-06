@@ -233,14 +233,20 @@ width: 15%
     object-fit: cover;
 } */
 
-.categoria img{
+.categoria-imagen-img {
     width: 120%;
     height: 200px;
     object-fit: cover;
     position: relative;
     animation-name: imgcategoria;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-play-state: paused;
+    
+    
+    /* alternate hace el rebote en una sola transi, y el infinie repite eesa transi con rebote. */
     
 }
 
@@ -248,14 +254,11 @@ width: 15%
     0% {
         transform: translate(-10%);
     }
-    50%{
+    
+    100% {
         transform: translate(0%);
     }
-    100% {
-        transform: translate(-10%);
-
-    }
-    }
+}
 
 
 .categoria-detalle{
@@ -273,8 +276,13 @@ width: 15%
 }
 
 
-.categoria-detalle:hover{
+.categoria:hover .categoria-detalle {
     box-shadow: 0px 5px 20px 0px rgba(213, 143, 9, 0.9);
+    
+}
+
+.categoria:hover .categoria-imagen-img {
+    animation-play-state: running;
     
 }
 
@@ -293,13 +301,18 @@ width: 15%
     font-size: 0.8em;
     margin-bottom: 5%;
 }
-.categoria-lista a{
+.categoria-lista-a {
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     color:rgb(34, 51, 78);
     letter-spacing: -0.5px;
 }
+.categoria-lista-a:hover {
+    color:rgb(213, 143, 9);
+    }
+
+
 .categoria-boton{
     
     display: flex;
